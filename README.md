@@ -93,7 +93,7 @@ for tweet in sentiment_analysis:
 
 
 
- ## Flying home
+ ## **Flying Home Case Study**
 Your boss assigned you to a small project. They are performing an analysis of the travels people made to attend business meetings. You are given a dataset with only the email subjects for each of the people traveling.
 
 You learn that the text followed a pattern. Here is an example:
