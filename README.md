@@ -165,3 +165,95 @@ print("Date: {}".format(flight_matches[0][4]))
 ```python
 
 ```
+
+
+
+## **Love it**!
+You are still working on the Twitter sentiment analysis project. First, you want to identify positive tweets about movies and concerts.
+
+You plan to find all the sentences that contain the words **love**, **like**, or enjoy and capture that word. You will limit the tweets by focusing on those that contain the words **movie** or **concert** by keeping the word in another group. You will also save the movie or concert name.
+
+For example, if you have the sentence: **I love the movie Avengers**. You match and capture love. You need to match and capture **movie**. **Afterwards, you match and capture anything until the dot.**
+
+The list sentiment_analysis containing the text of three tweets and the re module are loaded in your session. You can use print() to view the data in the IPython Shell
+
+
+```python
+sentiment_analysis =['I totally love the concert The Book of Souls World Tour. It kinda amazing!', 'I enjoy the movie Wreck-It Ralph. I watched with my boyfriend.', "I still like the movie Wish Upon a Star. Too bad Disney doesn't show it anymore."]
+for sent in sentiment_analysis:
+    print(sent)
+```
+
+    I totally love the concert The Book of Souls World Tour. It kinda amazing!
+    I enjoy the movie Wreck-It Ralph. I watched with my boyfriend.
+    I still like the movie Wish Upon a Star. Too bad Disney doesn't show it anymore.
+
+
+
+```python
+# Write a regex that matches sentences with the optional words
+regex_positive = r"(love|like|enjoy).+?(movie|concert)\s(.+?)\."
+
+for tweet in sentiment_analysis:
+	# Find all matches of regex in tweet
+    positive_matches = re.findall(regex_positive, tweet)
+    
+    # Complete format to print out the results
+    print("Positive comments found {}".format(positive_matches))
+```
+
+    Positive comments found [('love', 'concert', 'The Book of Souls World Tour')]
+    Positive comments found [('enjoy', 'movie', 'Wreck-It Ralph')]
+    Positive comments found [('like', 'movie', 'Wish Upon a Star')]
+
+
+
+```python
+
+```
+
+
+
+## **Love it**!
+You are still working on the Twitter sentiment analysis project. First, you want to identify positive tweets about movies and concerts.
+
+You plan to find all the sentences that contain the words **love**, **like**, or enjoy and capture that word. You will limit the tweets by focusing on those that contain the words **movie** or **concert** by keeping the word in another group. You will also save the movie or concert name.
+
+For example, if you have the sentence: **I love the movie Avengers**. You match and capture love. You need to match and capture **movie**. **Afterwards, you match and capture anything until the dot.**
+
+The list sentiment_analysis containing the text of three tweets and the re module are loaded in your session. You can use print() to view the data in the IPython Shell
+
+
+```python
+sentiment_analysis =['I totally love the concert The Book of Souls World Tour. It kinda amazing!', 'I enjoy the movie Wreck-It Ralph. I watched with my boyfriend.', "I still like the movie Wish Upon a Star. Too bad Disney doesn't show it anymore."]
+for sent in sentiment_analysis:
+    print(sent)
+```
+
+    I totally love the concert The Book of Souls World Tour. It kinda amazing!
+    I enjoy the movie Wreck-It Ralph. I watched with my boyfriend.
+    I still like the movie Wish Upon a Star. Too bad Disney doesn't show it anymore.
+
+
+
+```python
+# Write a regex that matches sentences with the optional words
+regex_positive = r"(love|like|enjoy).+?(movie|concert)\s(.+?)\."
+
+for tweet in sentiment_analysis:
+	# Find all matches of regex in tweet
+    positive_matches = re.findall(regex_positive, tweet)
+    
+    # Complete format to print out the results
+    print("Positive comments found {}".format(positive_matches))
+```
+
+    Positive comments found [('love', 'concert', 'The Book of Souls World Tour')]
+    Positive comments found [('enjoy', 'movie', 'Wreck-It Ralph')]
+    Positive comments found [('like', 'movie', 'Wish Upon a Star')]
+
+
+
+```python
+
+```
